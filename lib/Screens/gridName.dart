@@ -1,6 +1,6 @@
 
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:mobigiccrossword/Screens/searchWords.dart';
+import 'package:mobigiccrossword/Screens/wordsearch.dart';
 
 class GridName extends StatefulWidget {
   final int rowCount;
@@ -77,7 +77,7 @@ class _GridNameState extends State<GridName> {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: GridView.count(
-        physics: ScrollPhysics(),
+        physics: const ScrollPhysics(),
         crossAxisCount: newRowCount,
         shrinkWrap: true,
         crossAxisSpacing: 10.0,

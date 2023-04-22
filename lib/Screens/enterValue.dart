@@ -1,5 +1,5 @@
+
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:mobigiccrossword/Screens/gridName.dart';
 
@@ -11,7 +11,7 @@ class Entervalue extends StatefulWidget {
 }
 
 class _EntervalueState extends State<Entervalue> {
-  int row = 0;
+  int row=0;
   int column = 0;
   final _formKey = GlobalKey<FormState>();
   @override
@@ -89,7 +89,7 @@ class _EntervalueState extends State<Entervalue> {
                           return null;
                         },
                         onChanged: (value) {
-                          row = int.parse(value);
+                        row = int.parse(value);
                         },
                         decoration: const InputDecoration(
                           isDense: true,
